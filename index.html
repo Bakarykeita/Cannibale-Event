@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-------------- Lien vers font awesome ----------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <link rel="icon" href="image/logo.jpeg">
+    <title>CANNIBALE EVENT</title>
+</head>
+
+<body>
+    <!----------- header --------------->
+    <header class="head">
+        <a href="#" class="logo">
+            <img src="image/logo.jpeg" alt="logo">
+            Cannibale Event
+        </a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">À propos</a>
+            <a href="#service">Services</a>
+            <a href="#galery">Galerie</a>
+            <a href="#review">Avis</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <div id="menu"><i class="fa-solid fa-bars"></i></div>
+    </header>
+    <!-------------- Home section ------------->
+    <section class="home" id="home">
+        <div class="content">
+            <p>Organisation événementielle</p>
+            <h2>Organisez vos événements avec nous<i class="fa-solid fa-heart" style="color: deeppink;"></i></h2>
+            <h3>Nous rendons vos événements inoubliables.<i class="fa-solid fa-handshake" style="color: #f5b652;"></i>
+            </h3>
+            <a href="#" class="btn">Nous contacter</a>
+        </div>
+        </sectio>
+
+
+        <div id="lightbox"
+            style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.95); z-index:99999; overflow-y:auto;">
+            <span onclick="fermerLightbox()"
+                style="position:fixed; top:20px; right:30px; font-size:3rem; color:#fff; cursor:pointer; z-index:99999999;">✕</span>
+            <div id="lightbox-titre"
+                style="text-align:center; color:deeppink; font-size:2.5rem; padding:30px 0 10px; font-weight:bold;">
+            </div>
+            <div id="lightbox-photos"
+                style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; padding:20px 40px 40px;"></div>
+        </div>
+
+
+        <script src="script.js"></script>
+</body>
+
+<!------------About section------------->
+<section class="about" id="about">
+    <h1 class="heading">À propos <span>de Nous</span></h1>
+    <img src="image/logo.jpeg" alt="" class="a">
+    <div class="container">
+        <div class="im">
+            <img src="image/b.png" alt="">
+        </div>
+        <div class="content">
+            <h3>Nous connaitre</h3>
+            <p>Notre structure accompagne particuliers et entreprises dans l'organisation d'événaments élégants, moderne
+                et ménorables.</p>
+            <a href="#" class="btn1">Explorer</a>
+        </div>
+    </div>
+</section>
+
+<!------------About services---------->
+<section id="service" class="swiper mySwiper service-slider">
+    <h1 class="heading"><span>S</span>ervice<span>s</span></h1>
+    <h3 class="info" style="color: deeppink;">Nous créons, vous célébrez</h3>
+    <p class="info">Transformons vos moments en souvenirs éternels</p>
+    <div class="swiper-wrapper">
+        <div class="swiper-slide">Soirée <img src="image/a.jpg" alt=""></div>
+        <div class="swiper-slide">Concert <img src="image/b.jpg" alt=""></div>
+        <div class="swiper-slide">Anniverssaire <img src="image/c.jpg" alt=""></div>
+        <div class="swiper-slide">Mariage <img src="image/d.jpg" alt=""></div>
+        <div class="swiper-slide">Kermesse <img src="image/e.jpg" alt=""></div>
+        <div class="swiper-slide">Spectacle <img src="image/f.jpg" alt=""></div>
+        <div class="swiper-slide">Réunion <img src="image/g.jpg" alt=""></div>
+    </div>
+</section>
+<!------------About galery----------->
+<section class="galery" id="galery">
+    <h1 class="heading">Explore <span>Notre</span> historique</h1>
+        <div class="inner-box">
+            <!-- Affiche 1 - Opinel 12 -->
+            <div class="galery-box">
+                <img src="image/Opinel-Sagatala.jpeg" alt="">
+                <div class="galery-content">
+                    <h3>Opinel 12 - Sagatala</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta, earum sed velit rem dolore
+                        veniam saepe totam.</p>
+                    <button class="btn1" onclick="ouvrirLightbox('opinel')">Explore</button>
+                </div>
+            </div>
+
+            <!-- Affiche 2 - Black and White -->
+            <div class="galery-box">
+                <img src="image/Black-and-White.jpeg" alt="">
+                <div class="galery-content">
+                    <h3>Black and White</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta, earum sed velit rem dolore
+                        veniam saepe totam.</p>
+                    <button class="btn1" onclick="ouvrirLightbox('blackwhite')">Explore</button>
+                </div>
+            </div>
+
+            <!-- Affiche 3 - All White -->
+            <div class="galery-box">
+                <img src="image/All-White.jpeg" alt="">
+                <div class="galery-content">
+                    <h3>All White</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta, earum sed velit rem dolore
+                        veniam saepe totam.</p>
+                    <button class="btn1" onclick="ouvrirLightbox('allwhite')">Explore</button>
+                </div>
+            </div>
+
+            <!-- Affiche 4 - Opinel 12 -->
+            <div class="galery-box">
+                <img src="image/f.jpg" alt="">
+                <div class="galery-content">
+                    <h3>Opinel 12 - Sagatala</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam soluta, earum sed velit rem dolore
+                        veniam saepe totam.</p>
+                    <button class="btn1" onclick="ouvrirLightbox('opinel')">Explore</button>
+                </div>
+            </div>
+        </div>
+</section>
+<!---------------------section avis------------------>
+<section class="review" id="review">
+    <h1 class="heading">Avis <span>des clients</span></h1>
+    <div class="review-sec">
+        <div class="review-box">
+            <i class="fa-solid fa-quote-right"></i>
+            <div class="user">
+                <img src="image/user.jpg" alt="">
+                <div class="user-info">
+                    <h3>Prénom & Nom</h3>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe mollitia exercitationem adipisci. Illum maxime iusto eaque optio nam repellendus.</p>
+            <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                <p><i class="fa-solid fa-heart"></i> 6.5K</p>
+            </div>
+        </div>
+        <div class="review-box">
+            <i class="fa-solid fa-quote-right"></i>
+            <div class="user">
+                <img src="image/user.jpg" alt="">
+                <div class="user-info">
+                    <h3>Prénom & Nom</h3>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe mollitia exercitationem adipisci. Illum maxime iusto eaque optio nam repellendus.</p>
+            <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                <p><i class="fa-solid fa-heart"></i> 4.5K</p>
+            </div>
+        </div>
+        <div class="review-box">
+            <i class="fa-solid fa-quote-right"></i>
+            <div class="user">
+                <img src="image/user.jpg" alt="">
+                <div class="user-info">
+                    <h3>Prénom & Nom</h3>
+                </div>
+            </div>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe mollitia exercitationem adipisci. Illum maxime iusto eaque optio nam repellendus.</p>
+            <div class="rate">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half"></i>
+                <p><i class="fa-solid fa-heart"></i> 6.5K</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+<script>
+    let navbar = document.querySelector('.head .navbar');
+    document.querySelector('#menu').onclick = () => {
+        navbar.classList.toggle('active');
+    }
+    window.onscroll = () => {
+        navbar.classList.remove('active');
+    }
+
+    /*------------swiper-----------------------*/
+    var swiper = new Swiper(".service-slider", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 5,
+            slideShadows: true,
+        },
+        loop: true,
+        autoplay: {
+            deplay: 2000,
+            disableOnInteraction: false,
+        }
+    });
+</script>
+
+</html>
