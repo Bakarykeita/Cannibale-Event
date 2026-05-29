@@ -50,7 +50,7 @@
                 style="text-align:center; color:deeppink; font-size:2.5rem; padding:30px 0 10px; font-weight:bold;">
             </div>
             <div id="lightbox-photos"
-                style="display:grid; grid-template-columns:repeat(3,1fr); gap:10px; padding:20px 40px 40px;"></div>
+                style="display:grid; grid-template-columns:repeat(3,1fr); gap:8px; padding: 16px;"></div>
         </div>
 
 
@@ -67,16 +67,17 @@
         </div>
         <div class="content">
             <h3>Nous connaitre</h3>
-            <p>Notre structure accompagne particuliers et entreprises dans l'organisation d'événaments élégants, moderne
+            <p>Notre structure accompagne particuliers et entreprises dans l'organisation d'événements élégants, modernes
                 et ménorables.</p>
-            <a href="#" class="btn1">Explorer</a>
+           
+                <!--------<a href="#" class="btn1">Explorer</a>------->
         </div>
     </div>
 </section>
 
 <!------------About services---------->
 <section id="service" class="swiper mySwiper service-slider">
-    <h1 class="heading"><span>S</span>ervice<span>s</span></h1>
+    <h1 class="heading">Nos <span>S</span>ervice<span>s</span></h1>
     <h3 class="info" style="color: deeppink;">Nous créons, vous célébrez</h3>
     <p class="info">Transformons vos moments en souvenirs éternels</p>
     <div class="swiper-wrapper">
@@ -126,7 +127,7 @@
                 </div>
             </div>
 
-            <!-- Affiche 4 - Opinel 12 -->
+            <!-------------
             <div class="galery-box">
                 <img src="image/f.jpg" alt="">
                 <div class="galery-content">
@@ -136,6 +137,7 @@
                     <button class="btn1" onclick="ouvrirLightbox('opinel')">Explore</button>
                 </div>
             </div>
+            ------------------>
         </div>
 </section>
 <!---------------------section avis------------------>
@@ -152,12 +154,17 @@
             </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe mollitia exercitationem adipisci. Illum maxime iusto eaque optio nam repellendus.</p>
             <div class="rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half"></i>
-                <p><i class="fa-solid fa-heart"></i> 6.5K</p>
+                <div class="etoile">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="like">
+                    <i class="fa-solid fa-heart"></i> 
+                    <span>6.5K</span>
+                </div>
             </div>
         </div>
         <div class="review-box">
@@ -170,12 +177,17 @@
             </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe mollitia exercitationem adipisci. Illum maxime iusto eaque optio nam repellendus.</p>
             <div class="rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half"></i>
-                <p><i class="fa-solid fa-heart"></i> 4.5K</p>
+                <div class="etoile">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="like">
+                    <i class="fa-solid fa-heart"></i> 
+                    <span>6.5K</span>
+                </div>
             </div>
         </div>
         <div class="review-box">
@@ -188,16 +200,63 @@
             </div>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe mollitia exercitationem adipisci. Illum maxime iusto eaque optio nam repellendus.</p>
             <div class="rate">
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star-half"></i>
-                <p><i class="fa-solid fa-heart"></i> 6.5K</p>
+                <div class="etoile">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half"></i>
+                </div>
+                <div class="like">
+                    <i class="fa-solid fa-heart"></i> 
+                    <span>7.5K</span>
+                </div>
             </div>
         </div>
     </div>
 </section>
+<!--------------Contact section------------>
+<footer class="contact" id="contact">
+    <div class="contact-sec">
+        <div class="contact-inner">
+            <div class="contact-inner-col">
+                <h1>Nous contacter</h1>
+                <p>Conakry, Guinée - (+224) 629 61 59 94</p>
+                <p>Nous sommes à votre écoute, écrivez-nous !</p>
+                <form action="#" id="formdetails">
+                    <input type="text" id="name" placeholder="Entrez votre nom" required>
+                    <input type="text" id="email" placeholder="Entrez votre Email" required>
+                    <input type="text" id="mobile" placeholder="votre téléphone" required>
+                    <textarea name="msg" id="" rows="30" cols="20" placeholder="Envoyez un message"></textarea> <br>
+                    <a href="#" class="btn">Envoyer</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!------------footer ------------->
+    <div class="cont-container">
+        <div class="f-container">
+            <h2>Cannibale Event</h2>
+            <p>Notre structure accompagne particuliers et entreprises dans l'organisation d'événaments élégants, moderne
+                et ménorables.</p>
+            <div class="social">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-tiktok"></i>
+            </div>
+        </div>
+        <div class="f-container">
+            <h2>Nos nouvelles</h2>
+            <p>Restez informé de nos prochains événements</p>
+            <input type="text" name="Email" placeholder="Entrez votre Mail">
+            <a href="#" class="btn">S'abonner</a>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright @2026 Cannibale Event - Tous droits réservés</p>
+        <a href="#home"><i class="fa-solid fa-circle-arrow-up"></i></a>
+    </div>
+</footer>
 
 
 
