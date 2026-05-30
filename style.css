@@ -190,7 +190,7 @@ section{
     font-family: 'Times New Roman', Times, serif, sans-serif;
     justify-content: baseline;
     line-height: 3rem;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #333;
 }
 .btn1 {
@@ -310,10 +310,9 @@ section{
     transition: .5s ease-in-out;
 }
 .galery-content p {
-    font-size: 1em;
-    text-transform: capitalize;
+    font-size: 15px;
     padding: .5rem 0;
-    line-height: 1.5rem;
+    line-height: 2rem;
 }
 .galery-box:hover .galery-content {
     height: 100%; 
