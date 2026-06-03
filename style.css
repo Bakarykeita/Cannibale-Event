@@ -455,7 +455,7 @@ section{
     color: var(--cir1);
 }
 .f-container input {
-    width: 90%;
+    width: 100%;
     padding: 1rem;
     background: #eee;
     border: none;
